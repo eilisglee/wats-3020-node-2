@@ -1,8 +1,8 @@
 //TODO fill in comment template
 /*
-Description:
-Input:
-Output:
+Description: a program that takes a string as input and reverses it by iterating through the string, character by character.
+Input: a string
+Output: the reversed string
 Usage: 
 */
 
@@ -12,9 +12,8 @@ let input = getargs.getStringArg()
 
 function reverseWithFullIteration(str) {
     let result = '';
-    // TODO loop from end of str (str.length-1) to beginning
-    for ( ) {
-        // TODO add the letter in the current position to the result string.
+    for (let i = str.length-1; i>=0; i--) {
+        result += str[i];
     }
     return result;
 }
@@ -24,9 +23,8 @@ function reverseWithHalfIteration(str) {
 }
 
 //test that it is a string
-//TODO check for string argument and if no string is entered provide a usage statement and quit
-if ( ) {
-    // TODO provide a usage statement
+if (!input) {
+    console.log("usage: node 4-revsers-string-iterate <string>");
 }
 else {
     // use functions to reverse string
